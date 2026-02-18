@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kendriya Vidyalaya</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6fb;
+            margin: 0;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            background: white;
+            border: 2px solid #9cb6cc;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(#9fd4f1, #6fb7dd);
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #fff3b0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #004080;
+            cursor: pointer;
+        }
+
+        .nav a:hover {
+            color: red;
+        }
+
+        /* Pages */
+        .page {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .page img {
+            width: 300px;
+        }
+
+        h2 {
+            color: #c0392b;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        th, td {
+            border: 1px solid #666;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background: #2c6faa;
+            color: white;
+        }
+
+        .staff th {
+            background: #2e7d32;
+        }
+
+        .about {
+            text-align: left;
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+
+    <script>
+        function showPage(pageId) {
+            let pages = document.getElementsByClassName("page");
+            for (let i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+            document.getElementById(pageId).style.display = "block";
+        }
+    </script>
+</head>
+
+<body onload="showPage('home')">
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        Kendriya Vidyalaya
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('admission')">Admission Details</a>
+        <a onclick="showPage('staff')">Staff Details</a>
+        <a onclick="showPage('circulars')">Circulars</a>
+        <a onclick="showPage('about')">About Us</a>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div class="page" id="home">
+        <h2>Welcome to Kendriya Vidyalaya!</h2>
+        <img src="school.png" alt="School Image">
+        <p><b>Empowering Education for a Brighter Future!</b></p>
+        <p style="text-align:right;">Home Page</p>
+    </div>
+
+    <!-- ADMISSION PAGE -->
+    <div class="page" id="admission">
+        <h2>Admission Details</h2>
+
+        <table>
+            <tr><th>Class</th><th>Boys</th><th>Girls</th></tr>
+            <tr><td>1</td><td>89</td><td>58</td></tr>
+            <tr><td>2</td><td>52</td><td>91</td></tr>
+            <tr><td>3</td><td>53</td><td>90</td></tr>
+            <tr><td>4</td><td>54</td><td>87</td></tr>
+            <tr><td>5</td><td>55</td><td>84</td></tr>
+            <tr><td>6</td><td>57</td><td>81</td></tr>
+            <tr><td>7</td><td>58</td><td>85</td></tr>
+            <tr><td>8</td><td>59</td><td>85</td></tr>
+            <tr><td>9</td><td>90</td><td>92</td></tr>
+            <tr><td>10</td><td>62</td><td>95</td></tr>
+        </table>
+    </div>
+
+    <!-- STAFF PAGE -->
+    <div class="page" id="staff">
+        <h2>Our Staff</h2>
+
+        <table class="staff">
+            <tr><th>Name</th><th>Designation</th><th>Experience</th></tr>
+            <tr><td>Mr. Sharma</td><td>Principal</td><td>15 Years</td></tr>
+            <tr><td>Ms. Gupta</td><td>Maths Teacher</td><td>10 Years</td></tr>
+            <tr><td>Mr. Verma</td><td>Science Teacher</td><td>8 Years</td></tr>
+            <tr><td>Mrs. Rao</td><td>English Teacher</td><td>12 Years</td></tr>
+        </table>
+    </div>
+
+    <!-- CIRCULARS PAGE -->
+    <div class="page" id="circulars">
+        <h2>Circulars</h2>
+        <p>• Admission Open for 2026</p>
+        <p>• Annual Exams Schedule Released</p>
+        <p>• Parent-Teacher Meeting Notice</p>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div class="page" id="about">
+        <h2>About Our School</h2>
+
+        <div class="about">
+            <p>
+                Kendriya Vidyalaya is committed to excellence in education and
+                holistic development of students.
+            </p>
+
+            <p><b>Contact Us:</b></p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: kvschool@example.com</p>
+            <p>Website: www.kvschool.edu.in</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

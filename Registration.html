@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background: red;
+            font-family: Arial;
+        }
+
+        .container {
+            background: white;
+            width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .submit-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <label>Student Name</label>
+    <input type="text" placeholder="Enter name">
+
+    <div class="row">
+        <div>
+            <label>Mobile No.</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Email Id</label>
+            <input type="email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <label>Father Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Mother Name</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <label>Select Course</label>
+            <select>
+                <option>Select</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+            </select>
+        </div>
+        <div>
+            <label>Date Of Birth</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <label>Gender</label><br>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <br><br>
+
+    <label>Student Photo</label>
+    <input type="file">
+
+    <label>Select Branch</label><br>
+    <input type="checkbox"> CSE
+    <input type="checkbox"> IT
+    <input type="checkbox"> ECE
+    <input type="checkbox"> Civil
+    <br><br>
+
+    <label>Address</label>
+    <textarea rows="4"></textarea>
+
+    <button class="submit-btn">Submit</button>
+</div>
+
+</body>
+</html>

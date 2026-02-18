@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Service Feedback Form</title>
+    <style>
+        body {
+            background: black;
+            font-family: Arial;
+        }
+
+        .box {
+            background: white;
+            width: 600px;
+            margin: 40px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: darkred;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .rating input {
+            width: auto;
+        }
+
+        button {
+            background: darkred;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="header">
+        Customer Service Feedback Form
+    </div>
+
+    <div class="content">
+        <label>Name</label>
+        <input type="text">
+
+        <div class="row">
+            <div>
+                <label>Phone</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Email Address</label>
+                <input type="email">
+            </div>
+        </div>
+
+        <p>Please rate each question on a scale of 1 to 5</p>
+
+        <div class="rating">
+            <p>How satisfied are you with the support you received?</p>
+            5 <input type="radio" name="q1">
+            4 <input type="radio" name="q1">
+            3 <input type="radio" name="q1">
+            2 <input type="radio" name="q1">
+            1 <input type="radio" name="q1">
+        </div>
+
+        <div class="rating">
+            <p>How would you rate the promptness of our response?</p>
+            5 <input type="radio" name="q2">
+            4 <input type="radio" name="q2">
+            3 <input type="radio" name="q2">
+            2 <input type="radio" name="q2">
+            1 <input type="radio" name="q2">
+        </div>
+
+        <div class="rating">
+            <p>How would you rate the professionalism of our team?</p>
+            5 <input type="radio" name="q3">
+            4 <input type="radio" name="q3">
+            3 <input type="radio" name="q3">
+            2 <input type="radio" name="q3">
+            1 <input type="radio" name="q3">
+        </div>
+
+        <p>Additional feedback</p>
+        <textarea rows="4"></textarea>
+
+        <button>Submit</button>
+    </div>
+</div>
+
+</body>
+</html>
